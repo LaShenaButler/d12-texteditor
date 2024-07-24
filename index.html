@@ -9,18 +9,22 @@
 </head>
     <body>
 
-        <main class="w-10/12 mx-auto">
+        <main class="w-6/12 mx-auto">
+            
 
             <h1 class="text-3xl font-bold text-gray-500 text-center">
                 TEXTEDITOR
-
             </h1>
-            <hr>
-        
-             <div class="flex justify-between border border-black font-bold">
 
-                <input class="bg-blue-100 col-span-3" id="output" type="text">
-                <button class="border-4 border-grey-300 text-center"> Bold"</button>
+            <hr class="my-5">
+        
+            <div class="flex justify-between border-black font-bold">
+                <button 
+                    class="border-4 border-grey-300 text-center" 
+                    onclick="document.getElementById('typingArea').className.toggle('font-bold')">
+                    Bold
+                </button>
+
                 <button class="border-4 border-grey-300 text-center"> Italic"</button>
                 <button class="border-4 border-grey-300 text-center"> Underline"</button>
                 <button class="border-4 border-grey-300 text-center"> LA"</button>
@@ -28,10 +32,15 @@
                 <button class="border-4 border-grey-300 text-center"> Uppercase"</button>
                 <button class="border-4 border-grey-300 text-center"> Lowercase"</button>
                 <button class="border-4 border-grey-300 text-center"> Capitalize"</button>
-                <button class="border-4 border-grey-300 text-center"> Clear Text"</button>
+                <button 
+                    class="border-4 border-grey-300 text-center" 
+                    onclick="document.getElementById('typingArea').value = ''"> 
+                    Clear Text
+                </button>
+
              
             </div>
             
-            <textarea id="" cols="30" rows="10"></textarea>
+            <textarea id="typingArea" cols="30" rows="10"></textarea>
     </body>
 </html>
