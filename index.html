@@ -12,7 +12,7 @@
         <main class="w-6/12 mx-auto">
             
 
-            <h1 class="text-3xl font-bold text-gray-500 text-center">
+            <h1 class="text-3xl font-bold text-gray-500 text-center pt-5">
                 TEXTEDITOR
             </h1>
 
@@ -21,12 +21,22 @@
             <div class="flex justify-between border-black font-bold">
                 <button 
                     class="border-4 border-grey-300 text-center" 
-                    onclick="document.getElementById('typingArea').className.toggle('font-bold')">
+                    onclick="document.getElementById('typingArea').style.fontWeight = 'bold'">
                     Bold
                 </button>
 
-                <button class="border-4 border-grey-300 text-center"> Italic"</button>
-                <button class="border-4 border-grey-300 text-center"> Underline"</button>
+                <button 
+                    class="border-4 border-grey-300 text-center"
+                    onclick="document.getElementById('typingArea').style.fontStyle = 'italic'">
+                    Italic
+                </button>
+
+                <button 
+                    class="border-4 border-grey-300 text-center"
+                    onclick="document.getElementById('typingArea').style.textDecoration = 'underline'"> 
+                    Underline
+                </button>
+                
                 <button class="border-4 border-grey-300 text-center"> LA"</button>
                 <button class="border-4 border-grey-300 text-center"> RA"</button>
                 <button class="border-4 border-grey-300 text-center"> Uppercase"</button>
@@ -41,6 +51,6 @@
              
             </div>
             
-            <textarea id="typingArea" cols="30" rows="10"></textarea>
+            <textarea id="typingArea" cols="100" rows="10"></textarea>
     </body>
 </html>
