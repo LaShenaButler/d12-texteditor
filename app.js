@@ -8,11 +8,13 @@ function clearText() {
    document.getElementById('typingArea').style.fontStyle = 'normal'
    //set underline to normal
    document.getElementById('typingArea').style.textDecoration = 'none'
-   //set center to normal
+   //set align to normal/left
    document.getElementById('typingArea').style.textAlign = 'left'
    //set text to normal
    document.getElementById('typingArea').style.textTransform = 'none'
-
+    //set color to default/normal/black
+   document.getElementById('typingArea').style.color = 'black'
+   
 }
 
 
